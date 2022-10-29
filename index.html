@@ -55,11 +55,17 @@
             <li>Git merge</li>
             <li>Git push</li>
             <li>Git pull</li>
+            <li>Git checkout</li>
+            <li>Git remote</li>
+            <li>Git branch</li>
+            <li>Git merge</li>
+            <li>Git log</li>
+
         </ul>
         <p class="para">Now we will go over the Git commands in detail. </p>
 
 
-        <img class="center mt-40 mb-40" width="534" height="272" src="assets/images/Git-push-command.jpeg"
+        <img class="center mt-40 mb-40" width="666" height="550" src="assets/images/gitcommands.png"
              alt="Git Commands">
 
         <h1 class="heading">Configuring the Credentials</h1>
@@ -67,7 +73,7 @@
             username and email ID.</p>
         <img class="center mt-40 mb-40" width="586" height="464" src="assets/images/git%20bash%20here.png"
              alt="Git Bash Here">
-            <p class="para">To configure, we use the following commands:</p>
+        <p class="para">To configure, we use the following commands:</p>
         <div class="ml-20 flex flex-col">
             <code>git config --global user.name "Shumaim11"</code>
             <code>git config --global user.email "shumaimsaleem@gmail.com"</code>
@@ -99,6 +105,7 @@
         </div>
         <img class="center mt-40 mb-40" width="677" height="246" src="assets/images/mkdir_firstrepo.png"
              alt="mkdir FirstRepo">
+        <h1 class="heading">Initializing the Local Git Repository</h1>
         <p class="para">The folder "FirstRepo" is empty. We will now initialize a repository to our folder.</p>
         <div class="ml-20 flex flex-col">
             <code>git init</code>
@@ -115,6 +122,7 @@
              alt=".git folder created">
 
         <p class="para">This is created when a repository is initialized. </p>
+        <h1 class="heading">Creating Project Files</h1>
         <p class="para">Moving further, let's make some commits. For that, we will create two files and commit them
             one by one.</p>
         <p class="para">For the first file, the commands are as follows:</p>
@@ -125,7 +133,7 @@
         <p class="para">A notepad opens on the screen. Type anything inside it, save it and close it.</p>
         <img class="center mt-40 mb-40" width="1008" height="408" src="assets/images/making%20file.png"
              alt="Creating File using touch command, writing in it and saving it.">
-
+        <h1 class="heading">Checking the Status</h1>
         <p class="para">Next, let's check the status of the file that was created.
         </p>
         <div class="ml-20 flex flex-col">
@@ -135,6 +143,7 @@
             files can be seen in red.</p>
         <img class="center mt-40 mb-40" width="768" height="203" src="assets/images/git%20status.png"
              alt="git status command">
+        <h1 class="heading">Adding Files to Staging Area</h1>
         <p class="para">For Git to track that file, add command is used. If you know the exact name of the file, you can
             specify it and simply type the following command:</p>
         <div class="ml-20 flex flex-col">
@@ -142,7 +151,7 @@
         </div>
         <img class="center mt-40 mb-40" width="754" height="84" src="assets/images/git%20add.png"
              alt="git add . command">
-
+        <h1 class="heading">Commiting the Staged Files</h1>
         <p class="para">The next step is to commit the file.
         </p>
         <div class="ml-20 flex flex-col">
@@ -161,6 +170,7 @@
         <p class="para">You'll notice that there are no more commits to be made, as there was a single notepad and that
             was committed in the previous step.
         </p>
+        <h1 class="heading">Checking the Git Commit History</h1>
         <p class="para">Next, check all the information regarding the commits that were made.
         </p>
         <div class="ml-20 flex flex-col">
@@ -171,6 +181,7 @@
 
         <p class="para">This displays the commit ID, author's name, and email ID used. You can also find the date and
             commit message on the screen.</p>
+        <h1 class="heading">Adding More Commits</h1>
         <p class="para">Let's make one more commit.
         </p>
         <p class="para">Repeat the same process again. We will make a file, add something to it, and close it.
@@ -195,15 +206,15 @@
              alt="git log command">
         <p class="para">We can see the commit number and order of the commits.
         </p>
+        <h1 class="heading">Linking Local Repository to Remote</h1>
         <p class="para">Now, let's push the two notepads on GitHub. Open your GitHub account, and create a new
             repository. The name of the repository will be "FirstRepo."
         </p>
         <img class="center mt-40 mb-40" width="666" height="684" src="assets/images/firstrepo.png"
              alt="Creating the first repository on GitHub account">
 
-        <p class="para">Copy the "git remote add origin" URL.
+        <p class="para">Copy the "git remote add origin" URL and paste the copied URL onto the Git Bash..
         </p>
-        <p class="para">Paste the copied URL onto the Git Bash.</p>
         <img class="center mt-40 mb-40" width="661" height="103"
              src="assets/images/git%20remote%20add%20origin%20url.png"
              alt="Copying the Url">
@@ -212,9 +223,8 @@
         </div>
         <img class="center mt-40 mb-40" width="787" height="104" src="assets/images/git%20remote%20-v.png"
              alt="git remote -v">
-        <p class="para">Now, let's push the content on to the remote repository.
-        </p>
-        <h1 class="heading">Git Push Command</h1>
+        <h1 class="heading">Pushing the Content on Remote Repository</h1>
+
         <p class="para">The Git push command is used to push the local repository content to a remote repository. After
             a local repository has been modified, a push is executed to share the modifications with remote team
             members. Pushing is the way commits are transferred from the local repository to the remote repository.</p>
@@ -229,6 +239,7 @@
         </p>
         <p class="para">Next, refresh the GitHub page, and you can find all the commits there.
         </p>
+        <h1 class="heading">Detail of Commits</h1>
         <p class="para">Each commit has a hash ID, which contains the details of each commit.
         </p>
         <img class="center mt-40 mb-40" width="100%" height="496"
@@ -239,10 +250,15 @@
         <img class="center mt-40 mb-40" width="100%" height="426"
              src="assets/images/OpenEachFile.png"
              alt="Individual Files Opened.">
-
-
-
-
+        <h1 class="heading">Git Branches</h1>
+        <p class="para">It is recommended to work with branches: for example, if you want to work on project
+            documentation, create a documentation branch using `git checkout` or `git branch`. Make changes in the
+            README file and when you have finalized the changes, merge the branch with the base. </p>
+        <p class="para">In our case, we have created and switched to a new branch called `readme`.
+        </p>
+        <div class="ml-20 flex flex-col">
+            <code>git checkout -b readme</code>
+        </div>
 
 
 
