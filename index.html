@@ -5,14 +5,17 @@
     <title>Git Tutorial For Beginners</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/Git-Icon-1788C.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css"
+          integrity="sha512-XgCw4Srl8lC1ECwcaHwAU0WnxQwHkqmInzg9wJLtGB7DRuMaXPuK2k9WJ2AwRDGdrgK9eJpZl2hUlLi2WQssmw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <header class="flex flex-col">
-    <h1 class="heading px-50">Git Tutorial For Beginners</h1>
+    <h1 class="heading main-head px-50">Git Tutorial For Beginners</h1>
     <p class="para px-50"> A beginner's tutorial demonstrating how Git version control works and why it is crucial for
         data
         science projects.</p>
-    <img class="center mt-40" width="900" height="470" src="assets/images/What-is-Git-1.jpg" alt="What Is Git?">
+    <img class="center mt-40 mb-40" width="900" height="470" src="assets/images/What-is-Git-1.jpg" alt="What Is Git?">
 </header>
 <main class="px-50">
     <div class="flex flex-col mt-40">
@@ -59,7 +62,8 @@
         <p class="para">The Git push command is used to push the local repository content to a remote repository. After
             a local repository has been modified, a push is executed to share the modifications with remote team
             members. Pushing is the way commits are transferred from the local repository to the remote repository.</p>
-        <img class="center" width="534" height="272" src="assets/images/Git-push-command.jpeg" alt="Git Push Command">
+        <img class="center mt-40 mb-40" width="534" height="272" src="assets/images/Git-push-command.jpeg"
+             alt="Git Push Command">
         <p class="para">Let us take a look at a Git push command demo.</p>
         <h1 class="heading">Demo of Git Push Command</h1>
         <p class="para">Now let’s start with opening Git Bash and configuring it with a
@@ -69,13 +73,13 @@
             <code>git config --global user.email "shumaimsaleem@gmail.com"</code>
             <code>git config --list</code>
         </div>
-        <img class="center mt-40" width="691" height="506" src="assets/images/git%20push%20demo.png"
+        <img class="center mt-40 mb-40" width="691" height="506" src="assets/images/git%20push%20demo.png"
              alt="Git Push Command Demo">
         <p class="para">Then, let's check the current working directory:</p>
         <div class="ml-20 flex flex-col">
             <code>pwd</code>
         </div>
-        <img class="center mt-40" width="547" height="63" src="assets/images/pwd.png" alt="pwd command">
+        <img class="center mt-40 mb-40" width="547" height="63" src="assets/images/pwd.png" alt="pwd command">
         <p class="para">To create a repository in the working directory, use the following commands:
         </p>
         <div class="ml-20 flex flex-col">
@@ -83,7 +87,8 @@
             <code>cd git_demo</code>
             <code>pwd</code>
         </div>
-        <img class="center mt-40" width="586" height="210" src="assets/images/git_demo.png" alt="pwd-demo command">
+        <img class="center mt-40 mb-40" width="586" height="210" src="assets/images/git_demo.png"
+             alt="pwd-demo command">
         <p class="para">The directory "Git_demo" will be empty for now.</p>
         <p class="para">Let's create a folder for the repository.</p>
         <div class="ml-20 flex flex-col">
@@ -91,13 +96,13 @@
             <code>cd FirstRepo</code>
             <code>pwd</code>
         </div>
-        <img class="center mt-40" width="677" height="246" src="assets/images/mkdir_firstrepo.png"
+        <img class="center mt-40 mb-40" width="677" height="246" src="assets/images/mkdir_firstrepo.png"
              alt="mkdir FirstRepo">
         <p class="para">The folder "FirstRepo" is empty. We will now initialize a repository to our folder.</p>
         <div class="ml-20 flex flex-col">
             <code>git init</code>
         </div>
-        <img class="center mt-40" width="756" height="122" src="assets/images/Initialized%20git.png"
+        <img class="center mt-40 mb-40" width="756" height="122" src="assets/images/Initialized%20git.png"
              alt="git init command">
 
         <p class="para">Something called the "master" appears on the screen. Whenever a Git repository is created for
@@ -105,7 +110,7 @@
             find a hidden ".git" folder. </p>
         <p class="para">If you check the folder, you can see several directories and configurations. Make sure you don't
             make any changes to any of the directories.</p>
-        <img class="center mt-40" width="884" height="111" src="assets/images/git%20folder.png"
+        <img class="center mt-40 mb-40" width="884" height="111" src="assets/images/git%20folder.png"
              alt=".git folder created">
 
         <p class="para">This is created when a repository is initialized. </p>
@@ -117,7 +122,7 @@
             <code>notepad alpha.txt</code>
         </div>
         <p class="para">A notepad opens on the screen. Type anything inside it, save it and close it.</p>
-        <img class="center mt-40" width="1008" height="408" src="assets/images/making%20file.png"
+        <img class="center mt-40 mb-40" width="1008" height="408" src="assets/images/making%20file.png"
              alt="Creating File using touch command, writing in it and saving it.">
 
         <p class="para">Next, let's check the status of the file that was created.
@@ -127,18 +132,39 @@
         </div>
         <p class="para">This shows that there isn't a file committed yet, and there are untracked files. The untracked
             files can be seen in red.</p>
-        <img class="center mt-40" width="768" height="203" src="assets/images/git%20status.png"
+        <img class="center mt-40 mb-40" width="768" height="203" src="assets/images/git%20status.png"
              alt="git status command">
         <p class="para">For Git to track that file, add command is used. If you know the exact name of the file, you can
             specify it and simply type the following command:</p>
         <div class="ml-20 flex flex-col">
             <code>git add .</code>
         </div>
-        <img class="center mt-40" width="754" height="84" src="assets/images/git%20add.png"
+        <img class="center mt-40 mb-40" width="754" height="84" src="assets/images/git%20add.png"
              alt="git add . command">
 
         <p class="para">The next step is to commit the file.
         </p>
+        <div class="ml-20 flex flex-col">
+            <code>git commit -m "Added the file named Alpha"</code>
+        </div>
+        <img class="center mt-40 mb-40" width="763" height="166" src="assets/images/commit%20alpha.png"
+             alt="git commit -m 'Added file' command">
+
+        <p class="para">Let's check the status of the file again.
+        </p>
+        <img class="center mt-40 mb-40" width="734" height="109" src="assets/images/status.png"
+             alt="git status command">
+        <div class="ml-20 flex flex-col">
+            <code>git status</code>
+        </div>
+
+        <p class="para">You'll notice that there are no more commits to be made, as there was a single notepad and that
+            was committed in the previous step.
+        </p>
+        <p class="para">Next, check all the information regarding the commits that were made.
+        </p>
+
+
 
 
     </div>

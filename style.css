@@ -5,12 +5,17 @@ body{
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
 }
+
 .heading{
     font-size: 24px;
     font-weight: 700;
     color: black;
 
 }
+.main-head{
+    font-size: 34px;
+}
+
 .flex{
     display: flex;
 }
@@ -25,6 +30,9 @@ header{
 }
 .mt-40{
     margin-top: 40px;
+}
+.mb-40{
+    margin-bottom: 40px;
 }
 .px-50{
     padding-left: 50px;
@@ -42,6 +50,18 @@ header{
     margin-left: 20px;
 }
 code{
-    font-size: 18px;
-    font-weight: bold;
+
+    font-family: Hack, monospace !Important;
+    width: 100%;
+    font-size: 0.875rem !important;
+    font-weight: normal;
+    line-height: 5px;
+    background-color: #1c92d2;
+    color: white;
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 16px;
+    text-shadow: none;
+
 }
