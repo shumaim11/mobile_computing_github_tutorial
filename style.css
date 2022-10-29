@@ -8,3 +8,30 @@ body{
     color: black;
 
 }
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+header{
+    height: 100vh;
+}
+.para{
+    font-size: 18px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.px-50{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.-mx-50{
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.center{
+    margin-right: auto;
+    margin-left: auto;
+}
