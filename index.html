@@ -271,8 +271,32 @@
         <img class="center mt-40 mb-40" width="1147" height="369"
              src="assets/images/editing%20readme.png"
              alt="editing readme">
-
-
+        <div class="ml-20 flex flex-col">
+            <code>git add README.md</code>
+            <code>git commit -m "Added README"</code>
+        </div>
+        <img class="center mt-40 mb-40" width="633" height="195"
+             src="assets/images/adding%20and%20commitng%20readme.png"
+             alt="adding and commiting readme">
+        <p class="para">The remote repository doesn't have a readme branch. To create a new branch and push changes, we
+            will use “readme:readme”. The output of the command shows that new branches have been created and both local
+            and remote `readme` branches are synced.</p>
+        <div class="ml-20 flex flex-col">
+            <code>git push origin readme:readme</code>
+        </div>
+        <img class="center mt-40 mb-40" width="616" height="249" src="assets/images/pushingreadme.png"
+             alt="pushing readme">
+        <p class="para">You can observe that we have successfully pushed the local branch to GitHub with a modified
+            version of README.md file. </p>
+        <h1 class="heading">Pull Request</h1>
+        <p class="para">This functionality is common for organizations. For example, a software developer has worked on
+            a new feature and wants to merge changes to the main remote branch. We will now create pull requests using
+            GitHub GUI by clicking on the pull request button. After that, select the readme branch which we want to
+            merge with the base (main). You can type a detailed explanation of what features were added and click on the
+            pull request button.
+        </p>
+        <img class="center mt-40 mb-40" width="616" height="249" src="assets/images/readme.jpeg"
+             alt="Readme branch on GitHub">
 
 
     </div>
