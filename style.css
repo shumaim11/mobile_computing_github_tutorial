@@ -1,6 +1,9 @@
 body{
     font-family: "Roboto",sans-serif;
     color: #272c37;
+    background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
 }
 .heading{
     font-size: 24px;
@@ -37,4 +40,8 @@ header{
 }
 .ml-20{
     margin-left: 20px;
+}
+code{
+    font-size: 18px;
+    font-weight: bold;
 }
